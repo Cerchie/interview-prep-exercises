@@ -42,3 +42,34 @@ let users = findUserIds([{
 ])
 
 findUserIds(users);
+
+
+// Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+
+function longPal(str) {
+  let count = 0;
+if (checkPalindrome(str) = true) {
+
+}
+}
+
+
+function checkPalindrome(str){
+  let le = str.length;
+  if (le === 0 || le === 1) {
+    return true;
+  }
+  if (str[0] === str[le - 1]) {
+    return checkPalindrome(str.slice(1, le - 1) );
+  }  
+  return false;
+};
+
+// function recurse() {
+//     if(condition) {
+//         // stop calling itself
+//         //...
+//     } else {
+//         recurse();
+//     }
+// }
